@@ -4,13 +4,13 @@ if [ -d "env" ]
 then
     echo "Python virtual environment exists." 
 else
-    python3 -m venv env
+    python -m venv env
 fi
 
 source env/Scripts/activate
 
 
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 if [ -d "logs" ] 
 then
